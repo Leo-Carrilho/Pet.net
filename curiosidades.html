@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet.Net - Curiosidades</title>
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style_mobile.css">
+    <link rel="stylesheet" href="dark_mode.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background: linear-gradient(135deg, #fceabb, #f8b500);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .card-body {
+        background: #fff;
+        border-radius: 18px;
+        padding: 2rem;
+      }
+ h3.card-title {
+            font-weight: 700;
+            background: linear-gradient(to right, #f8b500, #fceabb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            /* Adicionando fallback para navegadores mais antigos */
+            color: #f8b500;
+        }
+      .btn-primary {
+        background: linear-gradient(45deg, #f8b500, #ff8c00);
+        border: none;
+        font-weight: 600;
+        padding: 0.6rem 1.5rem;
+        border-radius: 25px;
+      }
+      .btn-primary:hover {
+        background: linear-gradient(45deg, #ff9900, #f8b500);
+      }
+      .btn-outline-secondary {
+        border-radius: 25px;
+      }
+      .form-label {
+        font-weight: 600;
+        color: #444;
+      }
+      select, textarea {
+        border-radius: 10px !important;
+      }
+      .result {
+        white-space: pre-wrap;
+        border-radius: 10px;
+      }
+      #resultCard h5 {
+        font-weight: 700;
+      }
+
+      #slogan-petshop {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0 1rem;
+  color: #333;
+}
+
+#slogan-cor {
+  color: #ff6600; /* destaque na palavra pet */
+}
+
+#subtitulo {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+#btn-ver-servicos {
+  text-align: center;
+}
+
+#numero-telefone {
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+
+#fundo-telefone img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Animação */
+.animacao {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 1s ease forwards;
+}
+
+.delay-btn {
+  animation-delay: 0.5s;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    </style>
+  </head>
+  <body>  
+    
+    <header>
+      <nav class="navbar">
+        <div id="logo-header">
+          <a href="index.html"><img src="imagens/logo.png" class="logo-img" alt="Logo Pet.Net"></a>
+        </div>
+        <div id="menu_hamburguer" class="container-fluid">
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="collapse" id="navbarToggleExternalContent3">
+        <div id="links_menu_hamburguer" class="p-4">
+          <div class="fundo_laranja_claro_menu">
+            <a href="index.html" class="btn btn-link w-100 text-center m-0">Home</a>
+            <a href="curiosidades.html" class="btn btn-link w-100 text-center m-0">Curiosidades</a> 
+            <div id="btn_meu_carrinho_nav" class="shadow">
+              <button class="btn btn-link w-100 text-center m-0">Meu carrinho</button>  
+            </div>
+            <br>
+            <div class="switch__container">
+              <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+              <label for="switch-shadow"></label>
+            </div>
+            <p id="modo_alternancia">Modo claro e escuro</p>
+            
+            <p id="modo_alternancia"><a href="login.html">Fazer login</a></p>
+            <div id="area-login"></div> 
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagens/Montagem_cell_1.png" class="d-block w-100" alt="Promoção de produtos pet">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/Montagem_Cell_2.png" class="d-block w-100" alt="Serviços de banho e tosa">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/Montagem_cell_3.png" class="d-block w-100" alt="Rações e alimentos">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div id="slogan-petshop" class="animacao">
+        Curiosidades para o seu <span id="slogan-cor">pet.</span>
+      </div>
+    
+      <div id="subtitulo" class="animacao">
+        Saiba mais sobre o mundo animal e descubra fatos interessantes sobre seus amigos de quatro patas.
+      </div>
+
+      <div id="btn-ver-servicos" class="animacao delay-btn text-center mb-4">
+        <button class="btn btn-link text-start m-0 shadow">Ver serviços</button>
+        <div id="numero-telefone" class="shadow d-inline-block ms-3">
+          <div id="fundo-telefone" class="d-inline-block me-2">
+            <img src="imagens/telefone.png" alt="Ícone de telefone">
+          </div>
+          (19) 99999-9999
+        </div>
+      </div>
+
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <!-- Formulário de recomendação de raça -->
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <h3 class="card-title mb-3 text-center">🐶 Qual raça de cão é melhor pra você?</h3>
+                <p class="text-muted text-center">Responda rápido e receba sugestões de raças. Sem enrolação.</p>
+
+                <form id="breedForm">
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <label class="form-label">Onde você mora?</label>
+                      <select class="form-select" id="living">
+                        <option value="apartamento">Apartamento</option>
+                        <option value="casa_sem_quintal">Casa (sem quintal)</option>
+                        <option value="casa_com_quintal">Casa (com quintal)</option>
+                        <option value="fazenda">Fazenda/Área rural</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label">Nível de atividade</label>
+                      <select class="form-select" id="activity">
+                        <option value="baixa">Baixa (senta no sofá)</option>
+                        <option value="moderada">Moderada (gosto de caminhar)</option>
+                        <option value="alta">Alta (corro, trilho, muito ativo)</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label">Tamanho preferido</label>
+                      <select class="form-select" id="size">
+                        <option value="pequeno">Pequeno</option>
+                        <option value="medio">Médio</option>
+                        <option value="grande">Grande</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label">Queda de pelo</label>
+                      <select class="form-select" id="shedding">
+                        <option value="indiferente">Indiferente</option>
+                        <option value="prefiro_pouco">Prefiro pouco pelo</option>
+                        <option value="muito_importante">Muito importante</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label">Experiência com cães</label>
+                      <select class="form-select" id="experience">
+                        <option value="iniciante">Iniciante</option>
+                        <option value="intermediario">Intermediário</option>
+                        <option value="experiente">Experiente</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label">Crianças/Animais em casa?</label>
+                      <select class="form-select" id="kidsPets">
+                        <option value="nao">Não</option>
+                        <option value="criancas">Crianças</option>
+                        <option value="outros_animais">Outros animais</option>
+                        <option value="ambos">Ambos</option>
+                      </select>
+                    </div>
+
+                    <div class="col-12">
+                      <label class="form-label">Temperamento preferido</label>
+                      <div class="d-flex gap-3 flex-wrap">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="friendly" value="friendly">
+                          <label class="form-check-label" for="friendly">Amigável</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="protetor" value="protetor">
+                          <label class="form-check-label" for="protetor">Protetor</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="independente" value="independente">
+                          <label class="form-check-label" for="independente">Independente</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="brincalhao" value="brincalhao">
+                          <label class="form-check-label" for="brincalhao">Brincalhão</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label class="form-label">Observações</label>
+                      <textarea class="form-control" id="notes" rows="2" placeholder="Ex: alergia, pouco tempo, etc."></textarea>
+                    </div>
+
+                    <div class="col-12 text-end">
+                      <button type="button" id="submitBreedBtn" class="btn btn-primary">Quero saber</button>
+                      <button type="reset" class="btn btn-outline-secondary">Resetar</button>
+                    </div>
+                  </div>
+                </form>
+
+                <hr>
+
+                <div id="resultCard" class="mt-3 d-none">
+                  <h5>Resultado</h5>
+                  <div class="alert alert-info result" id="resultText"></div>
+                  <div class="small text-muted">⚠️ Isso é sugestão — pesquise bem a raça antes de adotar/comprar.</div>
+                </div>
+              </div>
+            </div>
+<br><br>
+            <!-- Formulário de recomendação de ração -->
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <h3 class="card-title mb-3 text-center">🍗 Descubra a melhor ração para seu cão</h3>
+                <p class="text-muted text-center">Informe a raça e idade do seu pet para receber uma recomendação.</p>
+
+                <form id="foodForm">
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <label class="form-label">Raça</label>
+                      <select class="form-select" id="raca" required>
+                        <option value="">Selecione...</option>
+                        <option value="labrador">Labrador</option>
+                        <option value="shih-tzu">Shih Tzu</option>
+                        <option value="poodle">Poodle</option>
+                        <option value="vira-lata">Vira-lata/SRD</option>
+                      </select>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <label class="form-label">Idade (em anos)</label>
+                      <input type="number" class="form-control" id="idade" min="0" max="30" required>
+                    </div>
+                    
+                   <div class="col-12 text-end">
+                      <button type="submit" id="submitBreedBtn" class="btn btn-primary">Quero saber</button>
+  
+                    </div>
+                  </div>
+                  </div>
+                </form>
+
+                <div id="resultadoRacao" class="alert alert-info mt-4 d-none"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-4 mt-5">
+      <div class="container text-center">
+        <div id="logo-footer" class="mb-3">
+          <img src="imagens/logo.png" alt="Logo Pet.Net" class="img-fluid" width="150">
+        </div>
+        <div id="texto-footer">
+          <p id="nome-petshop-footer" class="fw-bold fs-5 mb-1">Pet.Net</p>
+          <p id="p_footer" class="text-muted">© Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Script para a introdução
+      window.addEventListener("DOMContentLoaded", function () {
+        const intro = document.querySelector('.intro');
+        setTimeout(() => {
+          intro.style.display = 'none'; 
+        }, 4500);
+      });
+
+      // Dados das raças para recomendação
+      const breeds = [
+        { id: 'shih_tzu', name: 'Shih Tzu', tags: ['pequeno','pouco_ativo','pouco_queda','amigavel','bom_com_criancas']},
+        { id: 'poodle', name: 'Poodle (toy/miniatura/standard)', tags: ['variavel_tamanho','alto_inteligencia','pouco_queda','bom_com_criancas']},
+        { id: 'labrador', name: 'Labrador Retriever', tags: ['medio','ativo','amigavel','bom_com_criancas','protetor']},
+        { id: 'golden', name: 'Golden Retriever', tags: ['medio','ativo','amigavel','bom_com_criancas']},
+        { id: 'bulldog_ingles', name: 'Bulldog Inglês', tags: ['medio','baixa_atividade','independente','pouco_queda']},
+        { id: 'pastor_alemao', name: 'Pastor Alemão', tags: ['grande','ativo','protetor','experiente']},
+        { id: 'husky', name: 'Husky Siberiano', tags: ['grande','muito_ativo','muito_queda','experiente']},
+        { id: 'beagle', name: 'Beagle', tags: ['pequeno','medio_ativo','brincalhao','bom_com_criancas']},
+        { id: 'buldogue_frances', name: 'Buldogue Francês', tags: ['pequeno','baixa_atividade','amigavel','bom_para_apartamento']}
+      ];
+
+      // Função para calcular pontuação da raça
+      function scoreForBreed(b, answers) {
+        let score = 0;
+        
+        if (answers.living === 'apartamento') {
+          if (b.tags.includes('pequeno') || b.tags.includes('bom_para_apartamento') || b.tags.includes('pouco_queda')) score += 2;
+          if (b.tags.includes('medio')) score += 1;
+        }
+        
+        if (answers.living === 'casa_com_quintal' || answers.living === 'fazenda') {
+          if (b.tags.includes('grande') || b.tags.includes('muito_ativo')) score += 2;
+        }
+        
+        if (answers.activity === 'baixa') {
+          if (b.tags.includes('baixa_atividade')) score += 2;
+          if (b.tags.includes('independente')) score += 1;
+        }
+        
+        if (answers.activity === 'moderada') {
+          if (b.tags.includes('medio') || b.tags.includes('variavel_tamanho')) score += 2;
+        }
+        
+        if (answers.activity === 'alta') {
+          if (b.tags.includes('ativo') || b.tags.includes('muito_ativo')) score += 3;
+        }
+        
+        if (answers.size === 'pequeno' && b.tags.includes('pequeno')) score += 3;
+        if (answers.size === 'medio' && b.tags.includes('medio')) score += 3;
+        if (answers.size === 'grande' && b.tags.includes('grande')) score += 3;
+        
+        if (answers.shedding === 'muito_importante' && b.tags.includes('pouco_queda')) score += 4;
+        if (answers.shedding === 'prefiro_pouco' && b.tags.includes('pouco_queda')) score += 2;
+        
+        if (answers.experience === 'iniciante' && b.tags.includes('amigavel')) score += 2;
+        if (answers.experience === 'experiente' && b.tags.includes('protetor')) score += 2;
+        
+        if (answers.kidsPets !== 'nao' && b.tags.includes('bom_com_criancas')) score += 2;
+        
+        if (answers.temps.includes('friendly') && b.tags.includes('amigavel')) score += 2;
+        if (answers.temps.includes('protetor') && b.tags.includes('protetor')) score += 2;
+        if (answers.temps.includes('independente') && b.tags.includes('independente')) score += 2;
+        if (answers.temps.includes('brincalhao') && b.tags.includes('brincalhao')) score += 2;
+        
+        return score;
+      }
+
+      // Event listener para o formulário de raças
+      document.getElementById('submitBreedBtn').addEventListener('click', () => {
+        const answers = {
+          living: document.getElementById('living').value,
+          activity: document.getElementById('activity').value,
+          size: document.getElementById('size').value,
+          shedding: document.getElementById('shedding').value,
+          experience: document.getElementById('experience').value,
+          kidsPets: document.getElementById('kidsPets').value,
+          temps: Array.from(document.querySelectorAll('#breedForm .form-check-input:checked')).map(i => i.value),
+          notes: document.getElementById('notes').value.trim()
+        };
+
+        breeds.forEach(b => b._score = scoreForBreed(b, answers));
+        const sorted = breeds.slice().sort((x,y) => y._score - x._score);
+        const top = sorted.slice(0,3).filter(b => b._score > 0);
+
+        const resultCard = document.getElementById('resultCard');
+        const resultText = document.getElementById('resultText');
+
+        if (!top.length) {
+          resultCard.classList.remove('d-none');
+          resultText.className = 'alert alert-warning result';
+          resultText.textContent = '😕 Não encontramos sugestões claras — tente mudar algumas respostas.';
+          return;
+        }
+
+        let msg = '🐾 Top sugestões:\n\n';
+        top.forEach((b, idx) => {
+          msg += `${idx+1}. ${b.name} — pontuação: ${b._score}\n`;
+        });
+
+        msg += '\n📌 Por que essas? Considerei: local, nível de atividade, tamanho e queda de pelo.';
+        if (answers.notes) msg += `\n\n📝 Observação sua: ${answers.notes}`;
+        msg += '\n\n⚠️ Dica: pesquise cada raça antes de decidir. Temperamento depende de criação e adestramento.';
+
+        resultCard.classList.remove('d-none');
+        resultText.className = 'alert alert-info result';
+        resultText.textContent = msg;
+      });
+
+      // Event listener para o formulário de ração
+      document.getElementById("foodForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const raca = document.getElementById("raca").value;
+        const idade = parseInt(document.getElementById("idade").value);
+        const resultado = document.getElementById("resultadoRacao");
+
+        let mensagem = "";
+
+        if (raca === "labrador") {
+          if (idade < 1) mensagem = "Recomendação: Royal Canin Labrador Filhote";
+          else if (idade < 7) mensagem = "Recomendação: Premier Raças Grandes Adulto";
+          else mensagem = "Recomendação: Golden Senior Raças Grandes";
+        }
+        else if (raca === "shih-tzu") {
+          if (idade < 1) mensagem = "Recomendação: Royal Canin Shih Tzu Filhote";
+          else if (idade < 10) mensagem = "Recomendação: Premier Raças Pequenas Adulto";
+          else mensagem = "Recomendação: Golden Senior Raças Pequenas";
+        }
+        else if (raca === "poodle") {
+          if (idade < 1) mensagem = "Recomendação: Royal Canin Poodle Filhote";
+          else if (idade < 12) mensagem = "Recomendação: Premier Poodle Adulto";
+          else mensagem = "Recomendação: Golden Senior Raças Pequenas";
+        }
+        else if (raca === "vira-lata") {
+          if (idade < 1) mensagem = "Recomendação: Ração Premium para Filhotes";
+          else if (idade < 8) mensagem = "Recomendação: Ração Premium para Adultos";
+          else mensagem = "Recomendação: Ração Sênior";
+        }
+
+        resultado.textContent = mensagem;
+        resultado.classList.remove("d-none");
+      });
+    </script>
+  </body>
+</html>

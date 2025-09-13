@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet.Net</title>
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style_mobile.css">
+    <link rel="stylesheet" href="dark_mode.css">
+    <link rel="stylesheet" href="introducao.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>  
+    <div class="intro">
+        <img src="imagens/logo.png" alt="Imagem de Introdução" class="img-fluid" width="300">
+    </div>
+    
+    <header>
+      <nav class="navbar">
+        <div id="logo-header">
+          <a href="index.html"><img src="imagens/logo.png" class="logo-img" alt=""></a>
+        </div>
+        <div id="menu_hamburguer" class="container-fluid">
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="collapse" id="navbarToggleExternalContent3">
+        <div id="links_menu_hamburguer" class="p-4">
+          <div class="fundo_laranja_claro_menu">
+            <a href="#link_reservas" class="btn btn-link w-100 text-center m-0">Reservas</a>
+            <a href="#link_servicos" class="btn btn-link w-100 text-center m-0">Serviços</a> 
+            <a href="#link_produtos" class="btn btn-link w-100 text-center m-0">Produtos</a> 
+            <a href="curiosidades.html" class="btn btn-link w-100 text-center m-0">Curiosidades</a> 
+            <div id="btn_meu_carrinho_nav" class="shadow">
+              <button class="btn btn-link w-100 text-center m-0">Meu carrinho</button>  
+            </div>
+            <br>
+             <div class="switch__container">
+              <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+              <label for="switch-shadow"></label>
+            </div>
+            <p id="modo_alternancia">Modo claro e escuro</p>
+            
+            <p id="modo_alternancia"><a href="login.html">Fazer login</a></p>
+            <div id="area-login"></div> 
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagens/Montagem_cell_1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/Montagem_Cell_2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/Montagem_cell_3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div id="slogan-petshop" class="animacao">
+        Cuidando com amor de quem te faz <div id="slogan-cor">feliz.</div>
+      </div>
+    
+      <div id="subtitulo" class="animacao">
+        Aproveite nossos serviços! Escolha o que seu pet merece e garanta cuidado e carinho em cada detalhe.
+      </div>
+
+      <div id="btn-ver-servicos" class="animacao delay-btn">
+        <button class="btn btn-link text-start m-0 shadow">Ver serviços</button>
+        <div id="numero-telefone" class="shadow">
+          <div id="fundo-telefone">
+            <img src="imagens/telefone.png" alt="">
+          </div>
+          (19) 99999-9999
+        </div>
+      </div>
+
+      <div id="link_servicos" class="titulos">SERVIÇOS</div>
+      <div class="subtitulos">Como são nossos serviços</div>
+      <div class="img-servicos animacao delay-servicos">
+        <img class="v"  src="imagens/facil-de-pedir.png" alt="">
+      </div>
+      <p class="titulo-descricao animacao delay-servicos">Fácil de pedir</p>
+      <p class="texto-descricao animacao delay-servicos">Só é preciso alguns passos para pedir seus adesivos.</p>
+
+      <div id="img-entrega-rapida" class="animacao delay-entrega-rapida">
+        <img class="v"  src="imagens/entrega_rapida.png" alt="">
+      </div>
+      <p class="titulo-descricao animacao delay-entrega-rapida">Entrega rápida</p>
+      <p class="texto-descricao animacao delay-entrega-rapida">Nossa entrega é sempre pontual, rápida e segura.</p>
+
+      <div id="img-melhor-qualidade" class="animacao delay-melhor-qualidade">
+        <img class="v" src="imagens/melhor-qualidade.png" alt="">
+      </div>
+      <p class="titulo-descricao animacao delay-melhor-qualidade">Melhor qualidade</p>
+      <p class="texto-descricao animacao delay-melhor-qualidade">Não só a rapidez na entrega, a qualidade também é o nosso forte.</p>
+       
+      <div id="link_produtos" class="titulos animacao delay-opcoes">OPÇÕES</div>
+      <div class="subtitulos animacao delay-opcoes">Conheça os tipos de produtos</div>
+   
+      <div id="alinhar-tipos" class="animacao delay-opcoes">
+        <input type="radio" name="tipo" id="racoes" class="input-tipo" hidden>
+        <label for="racoes" class="tipos shadow">Rações</label>
+
+        <input type="radio" name="tipo" id="acessorios" class="input-tipo" hidden>
+        <label for="acessorios" class="tipos shadow">Acessórios</label>
+
+        <input type="radio" name="tipo" id="medicamentos" class="input-tipo" hidden>
+        <label for="medicamentos" class="tipos shadow">Medicamentos</label>
+      </div>
+
+      <!--Rações-->
+      <div class="produtos shadow" data-categoria="racoes">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Pedigree</p>
+          <p class="preco-produto">R$ 134,99</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="produtos shadow" data-categoria="racoes">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Special Dog</p>
+          <p class="preco-produto">R$ 78,90</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="produtos shadow" data-categoria="racoes">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Dog Chow</p>
+          <p class="preco-produto">R$ 170,00</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="produtos shadow" data-categoria="racoes">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Golden</p>
+          <p class="preco-produto">R$ 57,00</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="produtos shadow" data-categoria="racoes">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Premier Pet</p>
+          <p class="preco-produto">R$ 68,00</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div id="ver-mais" class="shadow animacao delay-opcoes">
+        Ver mais
+      </div>
+
+      <div class="produtos shadow escondido" data-categoria="racoes">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Royal Canin</p>
+          <p class="preco-produto">R$ 180,00</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="produtos shadow escondido" data-categoria="racoes">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Whiskas</p>
+          <p class="preco-produto">R$ 99,00</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="produtos shadow escondido" data-categoria="racoes">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">N&D</p>
+          <p class="preco-produto">R$ 100,00</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+
+      <!--Acessórios-->
+      <div class="produtos shadow" data-categoria="acessorios">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Pedigree</p>
+          <p class="preco-produto">R$ 134,99</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="produtos shadow" data-categoria="acessorios">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Special Dog</p>
+          <p class="preco-produto">R$ 78,90</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="produtos shadow" data-categoria="acessorios">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Dog Chow</p>
+          <p class="preco-produto">R$ 170,00</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="produtos shadow" data-categoria="acessorios">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Golden</p>
+          <p class="preco-produto">R$ 57,00</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="produtos shadow" data-categoria="acessorios">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Premier Pet</p>
+          <p class="preco-produto">R$ 68,00</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div id="ver-mais" class="shadow animacao delay-opcoes">
+        Ver mais
+      </div>
+
+      <div class="produtos shadow escondido" data-categoria="acessorios">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Royal Canin</p>
+          <p class="preco-produto">R$ 180,00</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="produtos shadow escondido" data-categoria="acessorios">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">Whiskas</p>
+          <p class="preco-produto">R$ 99,00</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="produtos shadow escondido" data-categoria="acessorios">
+        <img src="imagens/racao_foster.png" alt="Ração Foster">
+        <div class="info-produto">
+          <p class="nome-produto">N&D</p>
+          <p class="preco-produto">R$ 100,00</p>
+          <div class="linha-compras">
+            <div class="quantidade-container">
+              <button class="menos">-</button>
+              <span class="quantidade">0</span>
+              <button class="mais">+</button>
+            </div>
+            <div class="sacola-compras">
+              <img src="imagens/sacola.png" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div id="btn-compra" style="display: none;">
+        <img src="imagens/sacola.png" alt="Carrinho">
+        <span id="contador-carrinho">0</span>
+      </div>
+
+      <div id="modal-carrinho" class="modal-carrinho">
+        <div class="modal-conteudo">
+          <span id="fechar-modal" class="fechar">&times;</span>
+          <h2>Seu carrinho</h2>
+          <div id="itens-carrinho"></div>
+          <div id="total-carrinho"></div>
+          <a id="btn-finalizar" href="#">Continuar</a>
+        </div>
+      </div>
+
+      
+      <div id="link_reservas">
+        <div class="animacao delay-reserva">
+          <div id="fundo-reservar-horario">
+            <p class="titulos reserva" id="ajustar-reserva">RESERVA</p>
+            <p class="subtitulos reserva" id="ajustar-titulo-reserva">Quer reservar um horário?</p>
+            <p id="texto">Mande uma mensagem clicando no botão abaixo
+              Reserve sua data e horário de forma simples e rápida.</p>
+            <div id="link-reserva">
+              <a href="">Fazer reserva</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="logo-footer">
+        <img src="imagens/logo.png" alt="">
+      </div>
+      <div id="texto-footer">
+        <p id="nome-petshop-footer">Pet.Net</p>
+        <p id="p_footer">© Todos os direitos reservados</p>
+      </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" defer></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        const intro = document.querySelector('.intro');
+
+    setTimeout(() => {
+      intro.style.display = 'none'; 
+    }, 4500); 
+  });
+</script>
+
+<!--Texto de login-->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const botaoLogin = document.getElementById("btn-login");
+    const areaLogin = document.getElementById("area-login");
+
+    botaoLogin.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // Se já carregou, não recarrega
+      if (areaLogin.innerHTML.trim() !== "") return;
+
+      fetch("form-login.php")
+        .then(res => res.text())
+        .then(html => {
+          areaLogin.innerHTML = html;
+        })
+        .catch(err => console.error("Erro ao carregar o login:", err));
+    });
+  });
+</script>
+
+  </body>
+</html>

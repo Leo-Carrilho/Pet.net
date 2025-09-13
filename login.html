@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+</head>
+<body>
+
+  <h2>Área de login</h2>
+  <div id="area-login">Carregando formulário...</div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("form-login.php")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("area-login").innerHTML = html;
+        })
+        .catch(err => {
+          console.error("Erro ao carregar o formulário de login:", err);
+          document.getElementById("area-login").innerHTML = "Erro ao carregar o formulário.";
+        });
+    });
+  </script>
+
+</body>
+</html>
